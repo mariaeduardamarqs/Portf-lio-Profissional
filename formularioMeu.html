@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel = "stylesheet" href = "estilo.css">
+ 
+<body>
+    <main>
+         <section>
+            <h1> CADASTRO</h1>
+            <h5> Preencha o formulário abaixo para entrar em contato comigo: </h5>
+
+            <form action = "resultadoForm.html" method = "get"> 
+                <p>
+                    <label for = "Email"> E-mail: </label> 
+                    <input type = "email" id = "email" placeholder = "Exemplo:nome@gmail.com"> 
+                </p>
+                <p>
+                <label for = "dtnasc">Data Nasc.:</label>
+                <input type = "date" id = "dtnasc" name = "dtnasc">               
+                 </p>
+                 <p>
+                    <label for = "Telefone"> Telefone: </label>
+                    <input type = "tel" id = "Telefone" placeholder = "(00)00000-0000"> 
+                </p>
+                <p>
+                    <label for = "Senha"> Senha: </label>
+                    <input type = "password" id = "senha" placeholder = "Crie sua senha: "> 
+                </p>
+            <br><br>
+                   <div class="form-field">
+  <label for="fieldTextarea" class="form-label">Mensagem:</label>
+  <textarea class="form-control" id="fieldTextarea" rows="6"></textarea>
+  <div class="form-text">
+    Certifique-se de incluir detalhes relevantes.
+  </div>
+</div>
+ <br><br> <br><br> <br>
+<div class="form-field">
+  <label class="form-label">Termos e Condições</label>
+  <input type="checkbox" id="fieldOverheadCheck" class="check" required />
+  <div class="form-field-content">
+    <label for="fieldOverheadCheck">Concordo com os termos</label>
+    <br>
+    <small class="form-text">Por favor, leia antes de concordar.</small>
+  </div>
+</div>
+
+<button type = "submit" class="submit"> Cadastrar </button>
+
+             
+
+    </main>
+</body>
+</html>

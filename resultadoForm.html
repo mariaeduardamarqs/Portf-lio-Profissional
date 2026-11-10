@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel = "stylesheet" href = "estilo.css">
+</head>
+<body>
+
+  <header>
+    <!-- começa como "não recebido" e só muda se chegarem dados -->
+    <h1 id="titulo">Cadastro não recebido</h1>
+  </header>
+
+  <main>
+    <!-- aviso: aparece por padrão, e some se os dados chegarem -->
+    <p id="aviso" class="aviso-erro" role="alert">
+      Nenhum dado foi recebido. Use o link abaixo para voltar ao formulário e preencher os campos novamente.
+    </p>
+
+    <!-- conteúdo de sucesso: começa escondido e só aparece se chegarem dados -->
+    <section id="recebido" hidden>
+      <h4> Boas conexões dão origem a grandes projetos. Seja bem-vindo(a)! Vamos transformar sua ideia em realidade?</h4>
+    </section>
+
+    <p><a href="formularioMeu.html">← Voltar ao formulário</a></p>
+  </main>
+
+
+  <script>
+    // Lê parte de dados de uma URL, tudo que vem depois do "?" na URL
+    const dados = new URLSearchParams(window.location.search);
+
+    const aviso = document.getElementById("aviso");
+    const recebido = document.getElementById("recebido");
+    const titulo = document.getElementById("titulo");
+
+    // controla se chegou pelo menos um campo preenchido
+    let chegouDado = false;
+
+    dados.forEach(function (valor) {
+      if (valor.trim() !== "") {
+        chegouDado = true;
+      }
+    });
+
+    // decide o que mostrar: sucesso ou aviso
+    if (chegouDado) {
+      titulo.textContent = "Cadastro Feito e Recebido";
+      recebido.hidden = false; // mostra a mensagem de boas-vindas
+      aviso.hidden = true;     // esconde o aviso
+    }
+    // se não chegou nada, nada muda: o aviso continua aparecendo
+  </script>
+
+</body>
+</html>

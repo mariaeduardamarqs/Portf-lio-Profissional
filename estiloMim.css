@@ -1,0 +1,204 @@
+:root {
+     body {
+    background-color: #412153;
+  }
+    .linha-branca {
+       border: 0;                /* Remove a borda padrão do navegador */
+  height: 5px;              /* Espessura da linha (mude para 2px se quiser mais grossa) */
+  background-color: #ffffff; /* Cor branca */
+  width: 100%;              /* Garante que vai de fora a fora */
+  margin: 20px 0;           /* Espaçamento de 20px acima e abaixo da linha */
+}
+   h3 {
+    color: white;
+    text-align: right;
+   }
+
+   p {
+    text-align: right;
+   }
+
+   .layout-perfil {
+  display: flex;         /* Faz os filhos ficarem lado a lado */
+  align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
+  gap: 40px;             /* Cria um espaçamento seguro entre a foto e o texto */
+  max-width: 1000px;     /* Ajuste o tamanho máximo da seção na tela se precisar */
+  margin: 0 auto;        /* Centraliza a seção inteira na tela */
+}
+
+
+.foto-perfil {
+  width: 300px;          /* Defina a largura ideal para a sua foto */
+  height: auto;          /* Mantém a proporção correta sem distorcer */
+  flex-shrink: 0;        /* Impede que o navegador amasse a imagem */
+}
+
+
+.conteudo-texto {
+  flex: 1;               /* Faz o texto ocupar todo o restante do espaço */
+}
+h2 {
+    color: white;
+}
+p {
+    color: #ffffff;
+}
+h9 {
+    color: white;
+}
+ .linha-branca {
+       border: 0;                /* Remove a borda padrão do navegador */
+  height: 5px;              /* Espessura da linha (mude para 2px se quiser mais grossa) */
+  background-color: #ffffff; /* Cor branca */
+  width: 100%;              /* Garante que vai de fora a fora */
+  margin: 20px 0;           /* Espaçamento de 20px acima e abaixo da linha */
+}
+h3 {
+   color: #a072eb;
+ }
+ .stepper {
+  color: white;
+ } 
+ .stepper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: stepper-counter; /* Inicializa o contador de passos */
+}
+
+
+.stepper-item {
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 35px;
+  counter-increment: stepper-counter;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+
+/* Cria o círculo com o número do passo */
+.stepper-item::before {
+  content: counter(stepper-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/* Cria a linha vertical de ligação entre os círculos */
+.stepper-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 30px;
+  width: 2px;
+  height: calc(100% - 30px);
+  background-color: #cbd5e1;
+}
+
+
+/* Estilo para os itens ativos (passos concluídos/atuais) */
+.stepper-item.active::before {
+  background-color: #a072eb; /* Cor azul do círculo */
+  color: #ffffff;
+}
+
+
+.stepper-item.active:not(:last-child)::after {
+  background-color: #a072eb; /* Linha azul conectando os passos ativos */
+}
+h1 {
+  color: #a072eb; 
+}
+h2 {
+  color: #a072eb; 
+}
+.card-text {
+  color: rgb(0, 0, 0);
+}
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas automáticas de no mínimo 300px */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+}
+
+
+.card-body {
+  /* Seus estilos visuais atuais do card (borda, fundo, sombra, etc.) */
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #dfd1f7; 
+}
+  h3 {
+    color: #a072eb;
+  }
+ h5 {
+  color: white;
+  text-align: center;
+ }
+ .form-label {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+ }
+ nav-item {
+  color: white;
+ }
+ h7 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+ }
+ .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  max-width: none; /* remove o limite antigo de 400px */
+}
+
+.cards-container .card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* imagens com o mesmo tamanho, sem distorcer */
+}
+
+.cards-container .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* empurra o botão para o final do card, alinhando todos */
+.cards-container .card-body .btn-solid {
+  margin-top: auto;
+  align-self: flex-start;
+}
+    h4 {
+         color: #a072eb; 
+    }
+     h5 {
+  color: white;
+  text-align: center;
+ }
+}

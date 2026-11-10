@@ -1,0 +1,99 @@
+:root{ /* todo o html recebe essa edição*/
+  nav-item {
+    color: #000000; 
+    text-align: center;
+  }
+
+  p {
+      color: #000000;
+      text-align: center;
+      font-family:Helvetica;
+  }
+
+  hr {
+    color: #000000;
+  }
+
+  body {
+    background-color: #412153;
+  }
+  text-center {
+     display: none;
+  }
+  nav nav-underline {
+   text-align:right;}
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+     font-weight: bold ;
+     text-align: center;
+  }
+
+  .card {
+    display: flex;
+  }
+  h1 {
+    color: #a072eb;
+    font-weight: bold ;
+    text-align: center;
+  }
+    .linha-branca {
+       border: 0;                /* Remove a borda padrão do navegador */
+  height: 5px;              /* Espessura da linha (mude para 2px se quiser mais grossa) */
+  background-color: #ffffff; /* Cor branca */
+  width: 100%;              /* Garante que vai de fora a fora */
+  margin: 20px 0;           /* Espaçamento de 20px acima e abaixo da linha */
+}
+
+ h3 {
+  color: white;
+ }
+ p {
+  color: white;
+ }
+ h9 {
+  color: white;
+ }
+ h3 {
+   color: #a072eb;
+ }
+ button {
+  color: rgb(114, 44, 180);
+  
+ }
+ h5 {
+  color: white;
+  text-align: center;
+ }
+ .form-label {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+ }
+ .form-field {
+  text-align: center;
+  height: 40px;
+  width: 1800px;
+ }
+ .form-text{
+  color: white;
+ }
+ .form-field-content {
+  color: #ffffff;
+ }
+ .button {
+  text-align: center;
+  height: 30px;
+  width: 500px;
+ }
+  h4 {
+  color: white;
+  text-align: center;
+ }
+ p{
+    color: #ffffff;
+ }
+    }
+
+   
